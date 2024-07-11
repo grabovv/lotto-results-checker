@@ -23,9 +23,9 @@ async def main():
     lotto_results = draw_data['results'][0]['resultsJson']
     lotto_plus_results = draw_data['results'][1]['resultsJson']
     
-    print(f"Data losowania: {draw_date}")
-    print(f"Wyniki Lotto: {lotto_results}")
-    print(f"Wyniki Lotto Plus: {lotto_plus_results}")
+    print(f"Draw date: {draw_date}")
+    print(f"Lotto results: {lotto_results}")
+    print(f"Lotto Plus results: {lotto_plus_results}")
 
 async def get_lotto_data(url):
     browser = await launch(headless=True, executablePath='<path_to_chrome_binary>')
